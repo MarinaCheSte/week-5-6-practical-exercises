@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.grid_wrapper {
+    display: grid;
+    grid-template: 665px 55px/150px 1fr 150px;
+    grid-template-areas:
+        "sidebar1 main sidebar2"
+        "sidebar1 footer sidebar2";
+    width: 1500px;
+    height: 720px;
+    border-radius: 10px;
+    background: linear-gradient(141.8deg, #ECEEF8 2.92%, #CCCFDE 111.13%);
+}
+
+.sidebar_left {
+    grid-area: sidebar1;
+    display: grid;
+    grid-row: 1/3;
+    grid-template-rows: 30% 1fr 10%;
+}
+
+.logo {
+    width: 30%;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.navigation {
+    display: grid;
+    grid-row: 2/3;
+}
+
+.navigation li {
+    list-style-type: none;
+    font-size: smaller;
+    margin-bottom: 3em;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: rgba(105, 113, 127, 1);
+}
+
+.search {
+    display: grid;
+    grid-row: 3/4;
+    width: 20%;
+    padding-left: 20px;
+    opacity: 0.3;
+}
+
+.sidebar_right {
+    grid-area: sidebar2;
+    display: grid;
+    grid-column: 3/4;
+    grid-template-rows: 665px 50px;
+}
+
+.photo {
+    background-image: url(images/airPodspic.png);
+    background-size: cover;
+    border-top-right-radius: 10px;
+}
+
+.bottom_right {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.us {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: start;
+    font-size: small;
+    color: rgba(105, 113, 127, 1);
+}
+
+.usflag {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    height: 30%;
+}
+
+.headline {
+    display: grid;
+    grid-column: 2/3;
+    align-self: end;
+    grid-row: 2/3;
+    font-size: 250%;
+    line-height: 0.9em;
+    color: rgba(20, 36, 59, 0.3557);
+}
+
+.airpods {
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    font-size: 1300%;
+    font-weight: bold;
+    opacity: 0.1;
+}
+
+.text {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    padding-bottom: 35px;
+    font-size: small;
+    line-height: 1.5em;
+    color: rgba(20, 36, 59, 0.3557);
+}
+
+.button {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    font-size: small;
+    color: white;
+    background-color: rgba(20, 36, 59, 0.3557);
+}
+
+.buttonpart1 {
+    justify-self: start;
+    padding-left: 5px;
+}
+
+.buttonpart2 {
+    justify-self: end;
+    padding-right: 5px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+    grid-template-rows: 3fr 2fr 3fr 1fr 1.5fr;
+    opacity: 0.8;
+    border-bottom-left-radius: 8px;
+    background-image: url(images/iphone.png);
+    background-size: cover;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1.3fr 4fr;
+}
+
+.copyright {
+
+    align-self: center;
+    padding-left: 10px;
+    font-size: small;
+    color: rgba(105, 113, 127, 1);
+}
+
+.footernavigation a {
+    color: rgba(105, 113, 127, 1);
+    font-size: small;
+    text-decoration: none;
+}
+
+.footernavigation li {
+    display: inline;
+    list-style-type: none;
+    justify-content: start;
+    padding-right: 20px;
+    padding-left: 30px;
+    border-left: 2px solid rgba(105, 113, 127, 0.5);
+}

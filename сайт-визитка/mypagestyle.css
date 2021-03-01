@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(images/background.jpg);
+    padding: 50px 0;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.head_container {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 100px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-right: 25px;
+    list-style-type: none;
+}
+
+.navigation li a {
+    padding: 20px;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.navigation li a:hover {
+    background: rgb(248, 206, 238);
+    transition: .3s ease;
+}
+
+.navigation li a:visited {
+    color: rgb(236, 176, 226);
+}
+
+.navigation li a:active {
+    color: rgb(243, 12, 205);
+}
+
+.main_container {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+    background: rgb(226, 173, 226);
+    border-radius: 10px;
+}
+
+.photo_container {
+    display: flex;
+    width: 25%;
+    height: 70%;
+    border-radius: 10px;
+    background: url(images/girlphoto.jpg);
+    background-size: cover;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 55%;
+}
+
+.aside_container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.h3 {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.aside_container li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.list li {
+    padding: 8px;
+}
+
+.list li:hover {
+    padding: 8px;
+    background: rgb(180, 118, 166);
+    transition: .3s ease;
+}
+
+.footer_container {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 100px;
+    padding: 15px 0;
+    font-weight: bold;
+    color: rgb(27, 20, 87);
+}
+
+.footerlist {
+    display: flex;
+}
+
+.footerlist li {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+img {
+    width: 30px;
+}
